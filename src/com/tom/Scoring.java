@@ -14,6 +14,5 @@ public class Scoring {
 		}
 //		System.out.println(stu1.name + "\t" + stu1.english + "\t" + stu1.math);
 		stu1.print();
-		}
-
+	}
 }
