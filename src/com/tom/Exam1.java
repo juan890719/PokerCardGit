@@ -22,14 +22,27 @@ public class Exam1 {
 			int result = Integer.parseInt(aa[1]);
 			//System.out.println(a|b);
 			boolean matched = false;
-			//And
+			//AND
 			int and = ((a&b) > 0 ? 1 : 0);
 			if (result == and) {
-				System.out.println("And");
+				System.out.println("AND");
 				matched = true;
 			}
-			//Or
-			//Xor
+			//OR
+			int or = ((a|b) > 0 ? 1 : 0);
+			if (result == or) {
+				System.out.println("OR");
+				matched = true;
+			}
+			//XOR
+			int xor = ((a^b) > 0 ? 1 : 0);
+			if (result == xor) {
+				System.out.println("XOR");
+				matched = true;
+			}
+			if (! matched) {
+				System.out.println("IMPOSSIBLE");
+			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
